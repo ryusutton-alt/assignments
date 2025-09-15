@@ -1,18 +1,37 @@
-#this is my assignment code number 3.
+## number 1
+Time complexity of 4N + 16
+Answer: O(N)
+#number 2
+Time complexity of 2N²
+Answer: O(N²)
 def double_then_sum(array) 
   doubled_array = []
 
   array.each do |number| 
     doubled_array << number *= 2
   end
-
   sum = 0
-
   doubled_array.each do |number| 
     sum += number
   end
-
   return sum 
 end
-
+## number 4
+def multiple_cases(array) 
+  array.each do |string|
+    puts string.upcase 
+    puts string.downcase 
+    puts string.capitalize
+  end 
+end
+##number 5
+def every_other(array) 
+  array.each_with_index do |number, index|
+    if index.even?
+      array.each do |other_number|
+        puts number + other_number
+      end 
+    end
+  end 
+end
 
